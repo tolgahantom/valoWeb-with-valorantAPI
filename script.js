@@ -17,7 +17,7 @@ setNewCharacter = (character) => {
             <div class="abilities animate__animated  animate__fadeInUpBig" >
             <div class="ability">
                 <img
-                src="https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/abilities/ability1/displayicon.png"
+                src="${character.abilities[0].displayIcon}"
                 class="ability-image"
                 />
                 <span class="ability-letter">Q</span>

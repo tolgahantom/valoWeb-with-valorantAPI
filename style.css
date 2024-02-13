@@ -1,0 +1,116 @@
+@import url("https://fonts.cdnfonts.com/css/valorant");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap");
+
+:root {
+  --main-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "VALORANT", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.left-side,
+.right-side {
+  width: 100%;
+  height: 100%;
+}
+
+.left-side {
+  position: relative;
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100px;
+  z-index: 10;
+}
+
+.left-side-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  filter: drop-shadow(0px 0px 35px var(--main-color));
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.character-role {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.character-name {
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.abilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.ability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+}
+
+.ability-image {
+  padding: 10px;
+  filter: drop-shadow(0px 0px 15px var(--main-color));
+  width: 128px;
+  height: 128px;
+}
+
+.ability-letter {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: #fff;
+}
